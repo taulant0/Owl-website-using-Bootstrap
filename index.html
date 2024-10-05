@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl-page</title>
+  <style>
+    .carousel-item img{
+height:750px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+
+.nav{
+  --bs-nav-link-hover-color: #575757;
+}
+.nav-item a{
+  color: green;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #2cad58;
+}
+
+#features{
+  margin-bottom: 30px;
+
+}
+
+.modal{
+  --bs-modal-width: 900px;
+  
+}
+
+.modal-dialog{
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+  .d-block{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .lead{
+    text-align: justify;
+  }
+ .carousel-item img{
+  height:330px;
+ }
+
+}
+
+</style>
+</head>
+
+<body >
+
+  <!-- Title -->
+  <section id="header">
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#album-part" class="nav-link">Owl types</a></li>
+          <li class="nav-item"><a href="#subscribe" class="nav-link">Subscribe</a></li>
+        </ul>
+      </header>
+    </div>
+  </section>
+
+  <section>
+  <div class="px-4 py-2  text-center">
+    <img class="d-block mx-auto mb-4" style="border-radius: 10px;" src="./images/first-owl.jpg" alt="owl-picture" width="600px" height="450px">
+    <h1 class="display-5 fw-bold text-body-emphasis">Explore the enchanting world of owls!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Explore the unique traits and behaviors of these majestic birds, from their silent night hunting to their forest rule. Discover their habitats, techniques, and calls through engaging narratives and stunning visuals. Let these magnificent creatures spark your curiosity and appreciation for nature's wonders.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-success btn-lg px-4 gap-3">Meet the Owls</button>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="features" >
+    <div class="container mt-5">
+      <div class="card-group">
+        <div class="card">
+          <img src="./images/owl-vision.jpg" class="card-img-top height-set" alt="..." style="height:400px">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Exceptional Nocturnal Vision</h5>
+            <p class="card-text" style="text-align: justify;">Owls have incredibly keen night vision, thanks to their large eyes that are optimized for low-light conditions. They can see prey in near-total darkness, making them efficient nocturnal hunters.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/owl-wings.jpg" class="card-img-top height-set" alt="..." style="height:400px">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Silent Flight</h5>
+            <p class="card-text" style="text-align: justify;">Owls possess specialized feathers that enable them to fly silently. This silent flight adaptation allows them to surprise their prey without being detected, giving them a significant advantage during hunting.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/owl-snow.jpg" class="card-img-top height-set" alt="..." style="height:400px">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Wide Range of Adaptations</h5>
+            <p class="card-text" style="text-align: justify;">Owls exhibit diverse adaptations for their habitats and prey, from the snowy owls of the Arctic to the burrowing owls of the desert, each species uniquely thriving in its environment.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+<section id="slide">
+  <div class="container mt-5">
+    
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <h3 style="text-align: center;">Camouflaged Plumage </h3>
+          <p style="text-align: center;"> Many owl species have cryptic plumage patterns that help them blend seamlessly into their surroundings, providing excellent camouflage while they roost during the day. This camouflage helps protect them from predators and allows them to remain undetected by potential prey.</p>
+          <img src="./images/slide1.jpg" class="d-block w-100 "  alt="..." >
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <h3 style="text-align: center;">Varied Prey Preferences </h3>
+          <p style="text-align: center;">Owls have diverse diets that vary
+            depending on their species and habitat.
+            Some owls primarily hunt small mammals
+            like mice and voles, while others specialize
+            in catching insects, birds, or even fish.
+            Photographing owls with their prey can
+            illustrate their role as apex predators and
+            showcase the diversity of their hunting
+            strategies.</p>
+          <img src="./images/slide2.jpg" class="d-block w-100 "  alt="..." >
+        </div>
+        <div class="carousel-item">
+          <h3 style="text-align: center;">Owl's Neck Flexibility </h3>
+          <p style="text-align: center;"> Another characteristic of owls is their remarkable ability to rotate their heads up to 270 degrees. This exceptional neck flexibility allows them to scan their surroundings without moving their bodies, aiding in their hunting and surveillance activities.</p>
+          <img src="./images/slide3.webp" class="d-block w-100 "  alt="..." >
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="album-part">
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+<h2 style="text-align: center; margin-bottom: 40px;">Owl species</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+       
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Barn owl</h3>
+            <a href="#exampleModal1" data-toggle="modal" data-target="#exampleModal">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl1.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                The Barn Owl, characterized by its heart-shaped facial disc, exhibits exceptional nocturnal adaptations including silent flight and acute low-light vision. Sporting a pale, golden-brown plumage with mottled patterns, it blends seamlessly into grasslands, farmlands, and open woodlands. Renowned as a proficient predator, the Barn Owl primarily preys on small mammals like rodents, making it a vital component of natural pest control in various ecosystems.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal1">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl1.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Snowy owl</h3>
+            <a href="#exampleModal2" data-toggle="modal" data-target="#exampleModal2">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl2.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                The Snowy Owl (Bubo scandiacus) is a majestic bird of prey inhabiting the Arctic tundra regions of North America and Eurasia. Renowned for its striking white plumage with black markings, it blends perfectly into its snowy surroundings, providing effective camouflage during hunts. Snowy Owls primarily hunt small mammals, birds, and occasionally fish, showcasing their versatility as apex predators in their harsh, icy habitats.
+                 Snowy Owls also distinctive yellow eyes that further enhance their striking appearance.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal2">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl2.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+         <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Eurasian Eagle Owl</h3>
+            <a href="#exampleModal3" data-toggle="modal" data-target="#exampleModal3">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl3.jpeg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                The Eurasian Eagle Owl (Bubo bubo) is one of the largest owl species in the world, boasting impressive size and strength. With distinctive orange eyes and tufts of feathers resembling ears, this formidable predator strikes a fearsome figure in its European and Asian habitats. Renowned for its powerful talons and keen hunting skills, the Eurasian Eagle Owl primarily preys on small mammals, birds, and occasionally even larger prey such as foxes and young deer.The Eurasian Eagle Owl is a formidable nocturnal predator.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal3">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl3.jpeg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Barred Owl</h3>
+            <a href="#exampleModal4" data-toggle="modal" data-target="#exampleModal4">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl4.jpeg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                
+The Barred Owl (Strix varia) is a medium-sized owl species native to North America. Recognizable by its distinctive barred plumage and dark eyes, it inhabits a variety of forested habitats, including deciduous and mixed woodlands. Known for its haunting hooting call often described as "Who cooks for you? Who cooks for you-all?", the Barred Owl is a vocal and territorial bird. It primarily preys on small mammals, birds, amphibians, and insects, displaying adaptability and versatility in its diet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal4">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl4.jpeg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Little owl</h3>
+            <a href="#exampleModal5" data-toggle="modal" data-target="#exampleModal5">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl5.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                
+The Little Owl (Athene noctua) is a small owl species found across parts of Europe, Asia, and North Africa. Characterized by its compact size and distinctive facial pattern, it often inhabits open countryside, farmland, and suburban areas. Despite its diminutive stature, the Little Owl is an efficient hunter, preying on insects, small mammals, birds, and occasionally reptiles. Its curious nature and adaptability to human-altered landscapes make it a common sight in many regions. The Little Owl is charmingly nocturnal.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal5">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl5.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Burrowing owl</h3>
+            <a href="#exampleModal6" data-toggle="modal" data-target="#exampleModal6">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl6.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                
+The Burrowing Owl (Athene cunicularia) is a small owl species native to North and South America. These owls are characterized by their long legs and short tails, adapted for a ground-dwelling lifestyle. They are often found in open habitats such as grasslands, deserts, and agricultural fields where they hunt primarily insects, small mammals, and birds. Burrowing Owls are known for their unique nesting behavior, as they excavate their own burrows or repurpose existing ones for shelter and breeding.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal6">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl6.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Great grey owl</h3>
+            <a href="#exampleModal7" data-toggle="modal" data-target="#exampleModal7">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl7.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                
+The Great Grey Owl (Strix nebulosa) is one of the largest owl species, inhabiting boreal forests across North America, Europe, and Asia. Recognized by its imposing size, round facial disk, and piercing yellow eyes, it is a majestic hunter of small mammals such as voles and mice. With its silent flight and keen hearing, the Great Grey Owl is a highly efficient predator, capable of locating prey beneath thick snow cover. Its ethereal appearance and elusive nature make it a symbol of wilderness and mystery in northern habitats.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal7">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl7.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Ural owl</h3>
+            <a href="#exampleModal8" data-toggle="modal" data-target="#exampleModal8">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl8.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                
+The Ural Owl (Strix uralensis) is a medium-sized owl species native to Europe and parts of Asia. With its distinctive round facial disk and piercing orange eyes, it is well-adapted to hunting in dense forests and wooded areas. Ural Owls primarily feed on small mammals, birds, and insects, displaying remarkable agility and precision in their hunting techniques. Despite their nocturnal nature, they can sometimes be spotted during daylight hours, perched high in trees or gliding silently through the forest.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal8">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl8.jpg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <h3 style="text-align: center;">Eastern Screech owl</h3>
+            <a href="#exampleModal9" data-toggle="modal" data-target="#exampleModal9">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="./images/owl9.jpeg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Owl Image">
+            </a>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">
+                The Eastern Screech Owl (Megascops asio) is a small owl species native to North America. With its striking tufts and expressive yellow eyes, it's a charismatic inhabitant of wooded areas. These owls are skilled hunters, preying on small mammals, birds, and insects under the cover of darkness. Their plumage varies in color, ranging from gray to reddish-brown, allowing them to blend seamlessly into their surroundings.  They can sometimes be heard during the daytime, emitting distinctive trilling calls from their roosts.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal9">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="img-fluid" src="./images/owl9.jpeg" alt="Owl Image" >
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="subscribe">
+<div class="container" >
+  <div class="modal-dialog modal-newsletter">
+		<div class="modal-content">
+			<form action="/examples/actions/confirmation.php" method="post">
+				<div class="modal-header">
+					<div class="icon-box mx-auto">						
+						<i class="fa fa-envelope-open-o"></i>
+					</div>
+					
+				</div>
+				<div class="modal-body text-center">
+					<h4>Subscribe to our newsletter</h4>	
+					<p>If you want to know more about owls, subscribe to our list to receive the latest news, updates, and special offers directly in your inbox.</p>
+					<div class="input-group">
+						<input type="email" class="form-control" placeholder="Enter your email" required="">
+						<div class="input-group-append">
+							<input type="submit" class="btn btn-success" value="Subscribe">
+						</div>
+					</div>
+				</div>
+			</form>			
+		</div>
+	</div>
+    </div>
+ </section>
+
+
+  
+  <section id="footer">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#album-part" class="nav-link px-2 text-body-secondary">Owl types</a></li>
+        <li class="nav-item"><a href="#subscribe" class="nav-link px-2 text-body-secondary">Subscribe</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Owl</p>
+    </footer>
+  </section>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
